@@ -51,7 +51,7 @@ export default function Market(){
     
     function getData(){
         let myHeaders = new Headers();
-            myHeaders.append("apikey", "3VCpttMUifOMkv7b4pvXqQ55B258qoPt"); 
+            myHeaders.append("apikey", "qc9JLLWvNZYH2mnk7WYdXPstHvXGhDtw"); 
         
         let requestOptions = {
             method: 'GET',
@@ -81,23 +81,23 @@ export default function Market(){
             document.getElementsByClassName("list")[0].innerHTML+=html;
           */  
          console.log(result.rates)
-            
-            document.getElementById("usd").innerHTML += result.rates.USD+"</>";
-            document.getElementById("chf").innerHTML += result.rates.CHF+"</>";
-            document.getElementById("gbp").innerHTML += result.rates.GBP+"</>";
-            document.getElementById("hrk").innerHTML += result.rates.HRK+"</>";
-            document.getElementById("huf").innerHTML += result.rates.HUF+"</>";
-            document.getElementById("czk").innerHTML += result.rates.CZK+"</>";
-            document.getElementById("jpy").innerHTML += result.rates.JPY+"</>";
-            document.getElementById("sek").innerHTML += result.rates.SEK+"</>";
-            document.getElementById("dkk").innerHTML += result.rates.DKK+"</>";
-            document.getElementById("aud").innerHTML += result.rates.AUD+"</>";
-            document.getElementById("nok").innerHTML += result.rates.NOK+"</>";
-            document.getElementById("cad").innerHTML += result.rates.CAD+"</>";
-            document.getElementById("pln").innerHTML += result.rates.PLN+"</>";
-            document.getElementById("ron").innerHTML += result.rates.RON+"</>";
-            document.getElementById("rsd").innerHTML += result.rates.RSD+"</>";
-            document.getElementById("rub").innerHTML += result.rates.RUB+"</>";
+            document.getElementById("eur").innerHTML = result.rates.EUR+"</>";
+            document.getElementById("usd").innerHTML = result.rates.USD+"</>";
+            document.getElementById("chf").innerHTML = result.rates.CHF+"</>";
+            document.getElementById("gbp").innerHTML = result.rates.GBP+"</>";
+            document.getElementById("hrk").innerHTML = result.rates.HRK+"</>";
+            document.getElementById("huf").innerHTML = result.rates.HUF+"</>";
+            document.getElementById("czk").innerHTML = result.rates.CZK+"</>";
+            document.getElementById("jpy").innerHTML = result.rates.JPY+"</>";
+            document.getElementById("sek").innerHTML = result.rates.SEK+"</>";
+            document.getElementById("dkk").innerHTML = result.rates.DKK+"</>";
+            document.getElementById("aud").innerHTML = result.rates.AUD+"</>";
+            document.getElementById("nok").innerHTML = result.rates.NOK+"</>";
+            document.getElementById("cad").innerHTML = result.rates.CAD+"</>";
+            document.getElementById("pln").innerHTML = result.rates.PLN+"</>";
+            document.getElementById("ron").innerHTML = result.rates.RON+"</>";
+            document.getElementById("rsd").innerHTML = result.rates.RSD+"</>";
+            document.getElementById("rub").innerHTML = result.rates.RUB+"</>";
     
     
           
@@ -132,6 +132,11 @@ export default function Market(){
                 </tr>
             </thead>
             <tbody>
+                <tr>
+                    <td>EUR</td>
+                    <td>Euro</td>
+                    <td id="eur"></td>
+                </tr>
                 <tr>
                     <td>USD</td>
                     <td>American dollar</td>

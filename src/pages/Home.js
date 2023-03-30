@@ -20,7 +20,7 @@ export default function Home(){
 
     function getData(){
         let myHeaders = new Headers();
-            myHeaders.append("apikey", "3VCpttMUifOMkv7b4pvXqQ55B258qoPt"); 
+            myHeaders.append("apikey", "qc9JLLWvNZYH2mnk7WYdXPstHvXGhDtw"); 
         
         let requestOptions = {
             method: 'GET',
