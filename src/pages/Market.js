@@ -58,7 +58,7 @@ export default function Market(){
             redirect: 'follow',
             headers: myHeaders
     };
-    fetch("https://api.apilayer.com/exchangerates_data/latest?symbols=RUB%2CHUF%2CUSD%2CCHF%2CGBP%2CHRK%2CCZK%2CJPY%2CSEK%2CDKK%2CAUD%2CNOK%2CCAD%2CPLN%2CRON%2CRSD&base="+base, requestOptions)
+    fetch("https://api.apilayer.com/exchangerates_data/latest?symbols=EUR%2CRUB%2CHUF%2CUSD%2CCHF%2CGBP%2CHRK%2CCZK%2CJPY%2CSEK%2CDKK%2CAUD%2CNOK%2CCAD%2CPLN%2CRON%2CRSD&base="+base, requestOptions)
         .then(response => response.json())
         .then(result => {
         
