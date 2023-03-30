@@ -1,0 +1,29 @@
+#footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+#icons{
+    margin-top: 10%;
+    font-size: 40px;
+}
+.icon-links{
+    padding: 15px;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+}
+.icon-links:hover{
+    margin-top: 9%;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width: 1135px) {
+    #footer{
+        justify-content: center;
+    }
+    img{
+        display: none;
+    }
+}
