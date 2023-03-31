@@ -72,14 +72,14 @@ export function Navbar(){
             </div>
             <ul className="menu">
                 <li className={activeMenuItem === 'Home' ? 'active' : ''} onClick={() => handleMenuItemClick('Home')}>Home</li>
-                <li className={activeMenuItem === 'Market' ? 'active' : ''} onClick={() => handleMenuItemClick('Market')}>About</li>
-                <li className={activeMenuItem === 'ChooseUs' ? 'active' : ''} onClick={() => handleMenuItemClick('ChooseUs')}>Services</li>
+                <li className={activeMenuItem === 'Market' ? 'active' : ''} onClick={() => handleMenuItemClick('Market')}>Market</li>
+                <li className={activeMenuItem === 'ChooseUs' ? 'active' : ''} onClick={() => handleMenuItemClick('ChooseUs')}>Exchange</li>
                 <li className={activeMenuItem === 'Join' ? 'active' : ''} onClick={() => handleMenuItemClick('Join')}>Contact</li>
             </ul>
             <ul className={hamMenu? "menu-list" : "menu-list show"}>
                 <li className={activeMenuItem === 'Home' ? 'active' : ''} onClick={() => handleHamMenuItemClick('Home')}>Home</li>
-                <li className={activeMenuItem === 'Market' ? 'active' : ''} onClick={() => handleHamMenuItemClick('Market')}>About</li>
-                <li className={activeMenuItem === 'ChooseUs' ? 'active' : ''} onClick={() => handleHamMenuItemClick('ChooseUs')}>Services</li>
+                <li className={activeMenuItem === 'Market' ? 'active' : ''} onClick={() => handleHamMenuItemClick('Market')}>Market</li>
+                <li className={activeMenuItem === 'ChooseUs' ? 'active' : ''} onClick={() => handleHamMenuItemClick('ChooseUs')}>Exchange</li>
                 <li className={activeMenuItem === 'Join' ? 'active' : ''} onClick={() => handleHamMenuItemClick('Join')}>Contact</li>
                 <div className="menu-icon" onClick={handleClick}>
                     {click ? <FaTimes /> : <FaBars />}
